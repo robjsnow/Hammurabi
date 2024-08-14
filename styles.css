@@ -1,0 +1,138 @@
+body {
+    background-color: #2e2b5f;
+    color: #eaeaff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#gameContainer {
+    background-color: #3733a9;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px #000000;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #bbbbee;
+}
+
+#gameOutput {
+    background-color: #1b194a;
+    border: 2px solid #5555bb;
+    border-radius: 8px;
+    padding: 15px;
+    height: 200px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    text-align: left;
+    font-size: 14px;
+}
+
+#gameForm {
+    margin-top: 15px;
+}
+
+#playerInput {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #5555bb;
+    border-radius: 8px;
+    background-color: #1b194a;
+    color: #eaeaff;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5555bb;
+    color: #eaeaff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444499;
+}
+
+#debugInfo {
+    margin-top: 20px;
+    background-color: #444499;
+    padding: 10px;
+    border-radius: 8px;
+    color: #eaeaff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+#debugInfo h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#debugText {
+    white-space: pre-wrap;
+    font-size: 14px;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    #gameContainer {
+        padding: 10px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    #subtitle {
+        font-size: 12px;
+    }
+
+    #gameOutput {
+        font-size: 12px;
+        height: 150px;
+        padding: 10px;
+    }
+
+    #playerInput {
+        width: 80%;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #debugInfo {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    #debugInfo h2 {
+        font-size: 16px;
+    }
+}

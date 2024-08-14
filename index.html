@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamurabi Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <h1>Hammurabi</h1>
+        <p id="subtitle">Inspired by the C64 Hammurabi game.</p>
+        <pre id="gameOutput"></pre>
+        <form id="gameForm" onsubmit="return false;">
+            <input type="text" id="playerInput" autocomplete="off">
+            <button type="button" onclick="processInput()">Submit</button>
+        </form>
+        <div id="debugInfo">
+            <h2>Debug Info:</h2>
+            <p id="debugText"></p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
